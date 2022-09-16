@@ -49,7 +49,7 @@ const saveUserForm = (event) => {
   let year = birthYear[0];
   var age = currentYear - year;
   console.log({ age, currentYear, birthYear });
-  if (age > 18 && age < 55) {
+  if (age < 18 || age > 55) {
     document.getElementById("dob").style = "border:1px solid red";
     return alert("Your is not under 18 and 55 years");
   } else {
