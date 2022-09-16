@@ -15,7 +15,7 @@ const displayEntries = () => {
   let entries = retieveEntries();
   const tbleEntries = entries
     .map((entry) => {
-      const nameCell = `<td class='border px-4 py-2'>${entry.Name}</td>`;
+      const nameCell = `<td class='border px-4 py-2'>${entry.FullName}</td>`;
       const emailCell = `<td class='border px-4 py-2'>${entry.email}</td>`;
       const passwordCell = `<td class='border px-4 py-2'>${entry.password}</td>`;
       const dobCell = `<td class='border px-4 py-2'>${entry.dob}</td>`;
